@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{dd/MM/yy hh:mm:ss}] [%p] [%C:%M:%L] %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.hibernate" level="info" />
+        <Logger name="br.com.ranking_cidades" level="debug" />
+        <Logger name="org.springframework" level="info" />
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
